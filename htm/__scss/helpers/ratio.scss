@@ -1,0 +1,51 @@
+/* ratio (fixed aspect ratio block )*/
+//
+// use "padding hack": padding-top = Y / X
+//
+// <div class="ratio">
+// 	<div class="ratio__in">
+// 		content here
+// 	</div>
+// </div>
+//
+// short mode for img:
+//
+// <div class="ratio_i">
+// 	<img src="..." >
+// </div>
+//
+
+.ratio,
+.ratio_i {
+	position: relative;
+	// overflow: hidden;
+	&:before {
+		content:"";
+		display: block;
+		height: 0;
+		padding-top: 100%; /* square, 1:1 */
+	}
+}
+.ratio_i { overflow: hidden; }
+
+.ratio .ratio__in,
+.ratio_i img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	}
+
+// samples
+.ratio {
+	&--3-2:before {
+		padding-top: calc(2 / 3 * 100%);  // 3:2
+	}
+	&--16-9:before {
+		padding-top: calc(9 / 16 * 100%); // 16:9
+	}
+}
+/* / ratio */

@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+/*
+
+//
+// medreclama test project
+//
+
+
+//
+// namespace
+//
+
+_   = space (between words)
+-   = space (for atomic, modificators )
+__  = element
+--  = modificator
+
+.x          // block
+.x_a        // block
+
+.x__y       // element
+.x__y_a     // element
+
+.x--z       // block modificator
+.x--z-b     // block modificator
+.x__y--z    // element modificator
+
+
+
+//
+// measurements
+//
+
+colors        - scss variables
+font-size     - rem
+line-height   - number (unitless)
+hx vert margins   - rem
+vert gaps         - rem
+
+
+
+//
+// comments
+//
+
+fb - fallback
+pp - pixel perfect
+fx - fix (something)
+
+
+
+//
+// structure (of css)
+//
+
+side`s     - plugin`s styles
+proj       - project`s base styles
+helpers    - helpful things
+blocks     - blocks!
+modules    - composite blocks
+
+*/
+
+// side`s (libs)
+@import "libs/owl.carousel.min";
+@import "libs/dragula.min";
+
+
+// proj
+@import "start";
+@import "fonts";
+@import "vars";
+@import "base";
+
+
+// helpers
+@import "helpers/rst";
+@import "helpers/clmn";
+@import "helpers/cols";
+@import "helpers/ratio";
+@import "helpers/fw";
+@import "helpers/gaps";
+
+
+// blocks
+@import "blocks/icon";
+@import "blocks/inp";
+@import "blocks/inp_m";
+@import "blocks/but";
+@import "blocks/forms";
+@import "blocks/list";
+@import "blocks/caro";
+@import "blocks/uc";
+
+
+// modules
+@import "modules/act";

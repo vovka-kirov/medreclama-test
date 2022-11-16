@@ -1,0 +1,71 @@
+//
+// colors
+//
+
+//
+// raw colors
+$clr-gray-1: #edeff2; // bg dark
+$clr-gray-2: #717880; // bg, txt
+$clr-gray-3: #a9b3bf; // a-hov
+$clr-gray-4: #f2f2f2; // list bg
+$clr-gray-5: #ccc;
+
+// $clr-blue-1: #0051d4;
+// $clr-blue-2: #3b86ff;
+
+
+//
+// groups of colors (7-lvl)
+//
+// $clr-xxx-darkest:   #hhhhhh;
+// $clr-xxx-darken:    #hhhhhh;
+// $clr-xxx-dark:      #hhhhhh;
+// $clr-xxx:           #hhhhhh;
+// $clr-xxx-light:     #hhhhhh;
+// $clr-xxx-lighten:   #hhhhhh;
+// $clr-xxx-lightest:  #hhhhhh;
+
+$clr-red:          #d90800;
+
+$clr-blue:         #0051d4;
+$clr-blue-light:   #3b86ff;
+
+
+//
+// logic colors
+$clr-txt     : #000;
+$clr-link    : $clr-blue;
+$clr-link-hv : $clr-blue-light;
+$clr-base    : $clr-blue;
+
+
+//---------------------------------------------//
+
+//
+// variables - gaps etc
+//
+
+// gaps
+$cols-gap    : 20px;
+
+//---------------------------------------------//
+
+
+//
+// variables - ranges / breakpoints
+//
+
+$point-xs:  568px;
+$point-sm:  768px;
+$point-md:  980px;
+$point-lg:  1200px;
+
+// to max-w
+$bp-xs:  $point-xs  - 0.02;
+$bp-sm:  $point-sm  - 0.02;
+$bp-md:  $point-md  - 0.02;
+$bp-lg:  $point-lg  - 0.02;
+
+
+
+//---------------------------------------------//

@@ -1,0 +1,30 @@
+// but - button
+.but {
+	// centering for <a>
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+	box-sizing: border-box;
+	position: relative;
+	border: 0;
+	padding: 1rem 2rem;
+	height: 5.1rem;
+	color: #fff;
+	background-color: $clr-link;
+	font-size: 1.7rem;
+	font-weight: 600;
+	line-height: 1;
+	text-align: center; //fb
+	text-decoration: none; // if <a>
+	border-radius: 5px;
+	transition: background 0.3s ease;
+	user-select: none;
+
+	// states
+	&:hover,
+	&:focus {
+		background-color: $clr-link-hv;
+		outline: none;
+	}
+}

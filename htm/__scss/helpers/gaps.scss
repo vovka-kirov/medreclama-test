@@ -1,0 +1,16 @@
+// gaps
+
+// vertical
+.gv {
+	margin-bottom: 2rem;
+
+	// mobile
+	// @media only screen and (max-width: $bp-small) {
+		// &--b { margin-bottom: 20px; }
+		// &--mb { margin-bottom: 20px; }
+	// }
+}
+// reset (fix)
+.gv_fx {
+	margin-bottom: -2rem;
+}

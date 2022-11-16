@@ -1,0 +1,29 @@
+// inp (manual placeholder)
+.inp_m {
+	position: relative;
+
+	&__i {
+		&::placeholder { color: transparent; }
+	}
+	&__lbl {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		padding: 0 2rem;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		transform: translateY(-50%);
+		transform-origin: 2rem 50%;
+		transition: 0.25s;
+		pointer-events: none;
+	}
+
+	&__i:focus ~ &__lbl,
+	&__i:not(:placeholder-shown) ~ &__lbl {
+		top: 0;
+		color: $clr-gray-3;
+		transform: scale(0.75);
+	}
+}

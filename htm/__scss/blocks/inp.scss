@@ -1,0 +1,31 @@
+// inp - input
+.inp {
+	display: inline-flex;
+	box-sizing: border-box;
+	padding: 1rem 2rem;
+	border: 1px solid $clr-gray-2;
+	height: 5.5rem;
+	background: #fff;
+	font-size: 1.6rem;
+	text-overflow: ellipsis; // webkit & FF
+	transition:
+		border-color 0.25s,
+		box-shadow 0.25s;
+	border-radius: 10px;
+	box-shadow: none;
+
+	&::placeholder {
+		color: $clr-txt;
+		opacity: 1; //ff
+	}
+
+	// states
+	&:hover,
+	&:focus {
+		border-color: $clr-base;
+		outline: none;
+	}
+	&:focus {
+		box-shadow: 0 0 0 1px $clr-base;
+	}
+}

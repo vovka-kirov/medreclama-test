@@ -1,0 +1,26 @@
+// list
+.list {
+	li {
+		display: flex;
+		align-items: center;
+		position: relative;
+		padding-left: 5.4rem;
+		min-height: 4rem;
+		margin-bottom: 1rem;
+		&:before {
+			content: "•";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 4rem;
+			height: 4rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: $clr-base;
+			background: $clr-gray-4;
+			border-radius: 10px;
+		}
+		&:last-child { margin-bottom: 0; }
+	}
+}

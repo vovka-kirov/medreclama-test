@@ -1,0 +1,17 @@
+// icons system
+
+// simple icon, one element
+.icon {
+	position: relative;
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+	stroke: none;
+}
+
+// stoke mode
+.icon--str {
+	fill: none;
+	stroke: currentColor;
+}

@@ -1,0 +1,43 @@
+/** fonts
+------------------------------------------------------------------ */
+
+/* Commissioner */
+@font-face {
+	font-family: Commissioner;
+	src:
+		url("../fonts/Commissioner-Regular.woff2") format("woff2"),
+		url("../fonts/Commissioner-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: Commissioner;
+	src:
+		url("../fonts/Commissioner-Semibold.woff2") format("woff2"),
+		url("../fonts/Commissioner-Semibold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+/*
+
+font-weight:
+
+100 - Thin
+200 - Extra Light
+300 - Light
+400 - Normal / Regular
+500 - Medium
+600 - Semi Bold / Demi Bold
+700 - Bold
+800 - Extra Bold / Ultra Bold
+900 - Black / Heavy
+
+*/
+
+
+/** / fonts
+------------------------------------------------------------------ */
